@@ -1,0 +1,265 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.purple-background {
+    position: fixed;
+    width: 400px;
+    height: 540px;
+    background-color: #852092;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 100px;
+    border-radius: 20px;
+    width: max-content;
+    margin-left: 80px;
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+    /* background-color: red; */
+}
+
+.left {
+    background-color: #d9cece;
+    border-radius: 25px;
+    padding: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    z-index: 2;
+    position: relative;
+    border: 6px solid white;
+}
+
+.left h3 {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.left p {
+    font-size: 0.7em;
+    margin: 0;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #6e00ff, #ff00ff);
+}
+
+.chat-header p {
+    margin: 0;
+    color: gainsboro;
+    font-size: 0.7em;
+}
+
+.chat-header img.profile-pic {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 0.7em;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 4px;
+    border-radius: 6px;
+    max-width: 70%;
+    font-size: 0.7em;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: rgb(249, 242, 242);
+    padding: 6px;
+    color: #262626;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #852092;
+    border-radius: 15px;
+    padding: 6px;
+}
+
+.message.received-images {
+    align-self: flex-end;
+    background-color: transparent;
+}
+
+.message .images {
+    display: flex;
+    gap: 4px;
+}
+
+.message .images img {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.message .text {
+    margin-top: 4px;
+}
+
+.text-p {
+    align-items: flex-end;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #6e00ff, #ff00ff);
+    padding: 8px;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.option input {
+    margin-right: 8px;
+}
+
+.option p {
+    margin-right: 15px;
+}
+
+.option span {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px dotted gainsboro;
+    width: 12px;
+    height: 12px;
+}
+
+.option h3 {
+    font-size: 16px;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 13px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 0.7em;
+    position: relative;
+}
+
+.message-input button {
+    background-color: #852092;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    right: 7%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.right {
+    max-width: 500px;
+    text-align: left;
+    color: #333;
+}
+
+.right h1 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.right p {
+    font-size: 0.8em;
+    line-height: 1.9;
+    width: 90%;
+    color: gray;
+}
+/* ======================media============================== */
+@media (max-width: 576px) {
+    .purple-background {
+        width: 200px;
+        height: 400px;
+    }
+
+    .container {
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .left {
+        width: 75%;
+        padding: 13px;
+        padding-top: 20px;
+        margin-top: 30px;
+        height: auto;
+        max-height: 1000px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .right {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .right p {
+        margin: auto;
+    }
+}

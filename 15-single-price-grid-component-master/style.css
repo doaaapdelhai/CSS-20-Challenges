@@ -1,0 +1,108 @@
+body {
+    font-family: "Karla", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+}
+.parent {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 70%;
+    margin: 50px auto;
+}
+.top {
+    padding: 40px;
+}
+.top h2 {
+    color: hsl(179, 62%, 43%);
+}
+.top h4 {
+    color: hsl(71, 73%, 54%);
+}
+.top p {
+    color: gray;
+    line-height: 1.7;
+    width: 68%;
+}
+.down {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.down .left {
+    background-color: #087573;
+    width: 50%;
+    padding: 45px;
+}
+.down .right {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    padding: 45px;
+}
+.down .left h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+.down .left h5 {
+    color: gainsboro;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.down .left h5 span {
+    font-size: 30px;
+    color: white;
+    margin-right: 10px;
+    align-items: center;
+}
+.down .left p {
+    color: white;
+    line-height: 1.7;
+}
+.down .left button {
+    background-color: hsl(71, 73%, 54%);
+    width: 90%;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 13px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.right h2 {
+    color: white;
+}
+
+.right p {
+    color: gainsboro;
+    width: 65%;
+    line-height: 1.7;
+}
+
+/* media for phone */
+@media screen and (max-width: 480px) {
+    .parent {
+        width: 100%;
+        margin: 20px;
+    }
+    .top p {
+        width: 100%;
+    }
+    .down {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .down .left,
+    .down .right {
+        width: 95%;
+    }
+    .down .left button {
+        width: 80%;
+    }
+}

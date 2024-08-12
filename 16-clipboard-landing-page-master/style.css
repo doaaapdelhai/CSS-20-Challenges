@@ -1,0 +1,257 @@
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400; /* Normal weight */
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 80px auto;
+    text-align: center;
+}
+.section-one {
+    padding-bottom: 50px;
+}
+.section-one p {
+    color: gray;
+    width: 40%;
+    margin: auto;
+}
+.section-one .btns-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px;
+}
+.btns-header button {
+    border: none;
+    padding: 13px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btns-header button:first-child {
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+}
+.btns-header button:first-child:hover {
+    background-color: hsl(171, 55%, 55%);
+}
+.btns-header button:last-child {
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+}
+
+.btns-header button:last-child:hover {
+    background-color: hsl(233, 81%, 77%);
+}
+
+/*============global-title========= */
+.global-title p {
+    width: 47%;
+    margin: auto;
+    line-height: 1.7;
+    margin-bottom: 60px;
+    color: gray;
+}
+/*============ section two========= */
+.section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.section-two img {
+    max-width: 100%;
+}
+.section-two .right {
+    text-align: start;
+}
+.section-two .right div {
+    margin-top: 20px;
+}
+.section-two .right p {
+    color: gray;
+    width: 60%;
+    line-height: 1.5;
+}
+/*============ section three========= */
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.parent .child {
+    padding: 10px;
+}
+.parent .child p {
+    color: gray;
+    width: 80%;
+    margin: auto;
+    line-height: 1.7;
+}
+/*============ section five========= */
+.section-five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    margin: 90px 0;
+}
+.section-five img {
+    margin-right: 90px;
+    align-items: center;
+}
+/*============ section five========= */
+/*============footer======== */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 10px;
+}
+.footer .one img {
+    height: 50px;
+}
+.footer .two {
+    display: flex;
+    gap: 50px;
+}
+.footer .three {
+    display: flex;
+    gap: 20px;
+    transition: 0.5s;
+}
+.three img {
+    transition: filter 0.3s ease;
+}
+
+.three img:hover {
+    cursor: pointer;
+    filter: sepia(1) saturate(5) hue-rotate(180deg) brightness(1.2) contrast(1.2);
+}
+
+/* =====================media=========================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    .section-one p {
+        width: 90%;
+    }
+
+    .global-title p {
+        width: 90%;
+    }
+
+    .section-two .right p {
+        width: 70%;
+    }
+
+    .parent .child p {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .two {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer .three {
+        gap: 40px;
+    }
+    .global-title h1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .section-five .brands {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .btns-header {
+        flex-direction: column;
+    }
+    .btns-header button {
+        width: 70%;
+        margin-top: 10px;
+    }
+    .section-two .left img {
+        width: 80%;
+        height: auto;
+    }
+    .section-two .right {
+        width: 80%;
+        text-align: center;
+    }
+    .section-one h1 {
+        font-size: 25px;
+    }
+    .section-three img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-one p {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-two img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-two .right p {
+        width: 100%;
+    }
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .section-five {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-five img {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .footer .one img {
+        height: 50px;
+    }
+    .footer .two {
+        gap: 6px;
+        flex-direction: column;
+    }
+}

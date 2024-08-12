@@ -1,0 +1,118 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+.container {
+    margin: auto;
+}
+.top {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+.top h5 {
+    color: grey;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.top p {
+    color: gray;
+    line-height: 1.5;
+}
+/* -==================== */
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    padding: 20px;
+}
+.down .left,
+.middel-top,
+.middel-down,
+.right {
+    background-color: white;
+    padding: 10px;
+    border-radius: 9px;
+    width: 380px;
+    height: 220px;
+}
+.down .left {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.down p {
+    color: gray;
+    width: 80%;
+}
+.icon {
+    margin-top: 30px;
+    margin-left: 290px;
+}
+.middel-top {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    margin-bottom: 30px;
+}
+.middel-top p {
+    width: 80%;
+}
+.middel-down {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.right {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/*========== responsive============= */
+@media screen and (max-width: 768px) {
+    .down {
+        flex-direction: column;
+        align-items: center;
+    }
+    .down .left,
+    .middel-top,
+    .middel-down,
+    .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .icon {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .top {
+        width: 100%;
+    }
+    .top p {
+        width: 80%;
+        margin: auto;
+    }
+    .down {
+        flex-direction: column;
+        align-items: stretch;
+        margin-right: 30px;
+    }
+    .down .left,
+    .middel-top,
+    .middel-down,
+    .right {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .down p {
+        width: 100%;
+    }
+    .icon {
+        margin-top: 10px;
+        margin-right: 60px;
+    }
+}

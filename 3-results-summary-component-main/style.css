@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+    margin: 100px auto;
+    width: 50%;
+}
+.parent {
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 0 10px #ddd;
+}
+.left-card {
+    background-color: hsl(241, 81%, 54%);
+    border-radius: 15px;
+    text-align: center;
+    padding: 35px 0px;
+    width: 45%;
+}
+.left-card p:first-child {
+    color: gainsboro;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.left-card .cricel {
+    padding: 35px 30px;
+    border-radius: 50%;
+    width: 30%;
+    margin: auto;
+    background-color: hsla(256, 72%, 46%, 1);
+    color: white;
+    font-weight: bold;
+}
+.left-card .cricel span {
+    font-size: 45px;
+}
+.left-card .cricel p {
+    color: gainsboro;
+    font-weight: normal;
+}
+.left-card h2 {
+    color: white;
+    margin: 17px 0;
+}
+.left-card p:nth-of-type(2) {
+    color: gainsboro;
+    width: 75%;
+    margin: auto;
+}
+/*================= right-card============== */
+.right-card {
+    padding: 20px 0px;
+    width: 40%;
+}
+.right-card h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.btns img {
+    margin-right: 10px;
+}
+.right-card .btns {
+    display: flex;
+    flex-direction: column;
+}
+.right-card .btns div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.right-card p:first-child {
+    font-size: 18px;
+    color: hsl(0, 100%, 67%);
+}
+.right-card .btns div span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.right-card span {
+    margin-right: 10px;
+    text-align: center;
+}
+.tow p:first-child {
+    color: hsl(39, 100%, 56%);
+}
+.three p:first-child {
+    color: hsl(166, 100%, 37%);
+}
+.four p:first-child {
+    color: hsl(234, 85%, 45%);
+}
+.btns .one {
+    background-color: hsla(340, 53%, 72%, 0.449);
+}
+.btns .tow {
+    background-color: hsla(39, 100%, 48%, 0.133);
+}
+.btns .three {
+    background-color: hsla(166, 100%, 69%, 0.293);
+}
+.btns .four {
+    background-color: hsla(234, 85%, 45%, 0.198);
+}
+.right-card button {
+    background-color: #073f50;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Responsive to all screen */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .parent {
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
+    }
+
+    .left-card,
+    .right-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .parent {
+        gap: 15px;
+    }
+
+    .left-card .cricel {
+        width: 50%;
+    }
+}

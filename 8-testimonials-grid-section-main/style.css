@@ -1,0 +1,119 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+.testimonial {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+}
+.purple {
+    background-color: #733fc8;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.blue {
+    background-color: #48556a;
+    grid-row: span 2;
+}
+.white {
+    background-color: #ffffff;
+    color: #48556a;
+    grid-row: span 3;
+}
+.yellow {
+    background-color: #f7c04b;
+    color: #48556a;
+}
+.dark {
+    background-color: #19212e;
+    grid-column: span 2;
+}
+.info img {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.info span {
+    display: block;
+    color: gainsboro;
+    margin-top: 8px;
+}
+h3,
+.testimonial-text-three {
+    color: white;
+}
+.testimonial-text-three {
+    color: black;
+}
+p,
+.black-p {
+    color: gainsboro;
+    width: 100%;
+    line-height: 1.7;
+    font-size: 14px;
+    margin: 0;
+}
+.black-p {
+    color: black;
+}
+.testimonial-content-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24%;
+}
+/*======== media=========== */
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .purple,
+    .dark {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .blue,
+    .white,
+    .yellow {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .purple,
+    .blue,
+    .white,
+    .yellow,
+    .dark {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
